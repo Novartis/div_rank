@@ -1,0 +1,24 @@
+{
+    "path" : "/da/isld/library_reorg_2018/run_ssec",
+    "rank_file" : "mol_rank_data.csv",
+    "sample_name" : "Preferred Sample Id",
+    "score_column" : "score",
+    "random_id_column" : "random_concept_number",
+    "class_data": {
+        "TARGET_BCR": {"file": "AVAIL_TARGET_BCR.csv",  "sep": ",", "min_size": [1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "TARGET_SCORE": {"file": "AVAIL_TARGET_SCORE.csv",  "sep": ",", "min_size": [1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "PQSAR_MEDIUM": {"file": "MAIN_DECK_MCL_PQSAR:medium_confidence_1.2.csv","sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "DOCKING": {"file": "MAIN_DECK_MCL_DOCKING_1.8.csv",  "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "BAFP": {"file": "MAIN_DECK_MCL_BAFP_1.2.csv", "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "BDFP": {"file": "MAIN_DECK_MCL_BDFP_1.2.csv", "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "HTSFP": {"file": "MAIN_DECK_MCL_HTSFP_1.8.csv", "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "HCSFP_A": {"file": "MAIN_DECK_MCL_HCSFP_A.csv",  "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "HCSFP_B": {"file": "MAIN_DECK_MCL_HCSFP_B.csv", "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "FASTROCS": {"file": "MAIN_DECK_MCL_FastROCS_1.8.csv",  "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "CHEMFP": {"file": "MAIN_DECK_MCL_ChemFP_1.2.csv",  "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "SYNT_SCAFFOLDS": {"file": "AVAIL_scaffold_tree_synth_R3.txt",  "sep": ",", "min_size": [25, 5, 2], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "CHEM_TOPIC": {"file": "all_unique_concepts_topicProb_1000_05.txt",  "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}
+    },
+    "target_picking_quorum" : 0.5,
+    "outfile" : "div_rank_ssec_results_25.csv"
+}
