@@ -4,6 +4,7 @@ This code allows is for diversity picking across multiple different, and potenta
 
 Selection algorithm
 1.	Initialization:
+
 	a.	Initialize the selection round with one
 	b.	Determine for each class the initial round, that is the selection round from which onwards it is available for selection based on its membership count and the count limit set for its classification type.  
 	c.	Mark all compounds as not selected.
@@ -12,6 +13,7 @@ Selection algorithm
 3.	For each class, count the number of compounds already selected with a property rank score better or equal to selection threshold in previous rounds. Skip the subsequent steps for each class, where this count is ≥ selection round-initial-round+1. This represents the expected number of compounds selected for this class at selection round in case it had no overlap with overlap classes.  
 4.	For each remaining class determine the list of selection candidates consisting of all compounds having a  property rank score better or equal to selection threshold 
 5.	If there is only one candidate for this class, this is the compound to be selected for the class at this round. If there are multiple selection candidates, select the compound for this class as follows:
+
 	a.	Choose the compound having the maximal number of class assignments in different class types. 
 	b.	Use the random number assigned at initialization to break remaining ties
 6.	Remove the replicates from the list of compounds selected at 5 and mark the compounds as selected in selection round. 
