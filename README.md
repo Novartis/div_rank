@@ -1,7 +1,28 @@
-### Diversity picking code
+### Diversity picking algorithm
+
+This code allows is for diversity picking across multiple different, and potentailly overlapping chemcial compound classes, while at te sme time optimizing a property score 
+
+Selection algorithm
+1.	Initialization:
+	a.	Initialize the selection round with one
+	b.	Determine for each class the initial round, that is the selection round from which onwards it is available for selection based on its membership count and the count limit set for its classification type.  
+	c.	Mark all compounds as not selected.
+	d.	Assign each compound a random number for tie breaking
+2.	For each class available for selection at selection round, determine the property rank score of the best ranking compound that has not yet been selected to determine the selection threshold for each class at this round. Skip classes without any compound left for selection.
+3.	For each class, count the number of compounds already selected with a property rank score better or equal to selection threshold in previous rounds. Skip the subsequent steps for each class, where this count is ≥ selection round-initial-round+1. This represents the expected number of compounds selected for this class at selection round in case it had no overlap with overlap classes.  
+4.	For each remaining class determine the list of selection candidates consisting of all compounds having a  property rank score better or equal to selection threshold 
+5.	If there is only one candidate for this class, this is the compound to be selected for the class at this round. If there are multiple selection candidates, select the compound for this class as follows:
+	a.	Choose the compound having the maximal number of class assignments in different class types. 
+	b.	Use the random number assigned at initialization to break remaining ties
+6.	Remove the replicates from the list of compounds selected at 5 and mark the compounds as selected in selection round. 
+7.	Increment the selection round counter by one 
+8.	Repeat steps 2-7 until all compounds are selected. Optionally stop early after a predefined number of selection rounds or if given number of compounds have been selected.   
 
 This code is examplified on the public SSEC library (a library that can be used in screens withe xternal partners at the FASTlab)
 
+### Executing the code
+
+#### invocation via command line
 
 The code is run like this:
 
