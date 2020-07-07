@@ -23,6 +23,7 @@ Selection algorithm
 This code is examplified on the public SSEC library (a library that can be used in screens withe xternal partners at the FASTlab)
 
 ### Executing the code
+This code is meant to be executed with python 3.6 and pandas 0.25. It has *NOT* been tested under pandas 1.0. 
 
 #### invocation via command line
 
