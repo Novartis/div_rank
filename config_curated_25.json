@@ -7,7 +7,7 @@
     "class_data": {
         "TARGET_BCR": {"file": "AVAIL_TARGET_BCR.csv",  "sep": ",", "min_size": [1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
         "TARGET_SCORE": {"file": "AVAIL_TARGET_SCORE.csv",  "sep": ",", "min_size": [1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
-        "PQSAR_MEDIUM": {"file": "MAIN_DECK_MCL_PQSAR:medium_confidence_1.2.csv","sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
+        "PQSAR_MEDIUM": {"file": "MAIN_DECK_MCL_PQSAR_medium_confidence_1.2.csv","sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
         "DOCKING": {"file": "MAIN_DECK_MCL_DOCKING_1.8.csv",  "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
         "BAFP": {"file": "MAIN_DECK_MCL_BAFP_1.2.csv", "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
         "BDFP": {"file": "MAIN_DECK_MCL_BDFP_1.2.csv", "sep": ",", "min_size": [25, 5, 1], "sample_name": "Preferred Sample Id", "class_id": "class_id"}, 
